@@ -111,7 +111,6 @@ void MainScene::paintEvent(QPaintEvent *event)
     if(plane.death)
     {
         painters.drawPixmap(plane.x, plane.y, plane.plane_death);
-        qDebug() << "111111";
         enemy_timer.stop();
         timer.stop();
     }
@@ -296,7 +295,7 @@ void MainScene::crash()
             {
                 if(!enemy[i].free)
                 {                   
-                    if(enemy[j].rect.intersects(plane.m_bullet[i].rect))
+                    if(enemy[i].rect.intersects(plane.m_bullet[j].rect))
                     {
                         enemy[i].free = true;
                         plane.m_bullet[j].free = true;

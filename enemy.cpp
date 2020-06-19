@@ -68,7 +68,6 @@ void Enemy::updatePosistion()
         speed = -ENEMY_SPEED;
     }
 
-
     rect.moveTo(x, y);
 }
 

@@ -22,7 +22,7 @@ enum Direction
 #define BUL_INTERVAL 20
 #define GAME_WIDTH 480
 #define PLANE_SPEED 10
-#define GAME_HEIGTH 800
+#define GAME_HEIGTH 650
 #define BULLET_SPEED 5
 #define ONCE_FINALHIT 5
 #define FINALHIT_NUM  10
